@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-home work #6 05.05.2022
+# goit-markup-hw-02
+Homework 08.04.22 HTML M2
