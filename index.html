@@ -643,6 +643,29 @@
                             </li>
                         </ul>
                     </div>
+
+                    <form class="footer-form">
+                        <p class="footer-field-title">
+                            ПОДПИШИТЕСЬ НА РАССЫЛКУ
+                        </p>
+                        <div class="form-field-footer">
+                            <label
+                                class="form-label-footer"
+                                for="user-email-footer"
+                            ></label>
+                            <input
+                                type="email"
+                                class="form-input-footer"
+                                name="user-email-footer"
+                                id="user-email"
+                                placeholder="E-mail"
+                                required
+                            />
+                            <button type="submit" class="form-btn-footer">
+                                Подписаться
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </footer>
             <div class="backdrop" data-modal>
@@ -656,61 +679,79 @@
                             <use href="./images/icons.svg#icon-Vector-1"></use>
                         </svg>
                     </button>
-                    <p class="modal-title">
-                        Оставьте свои данные, мы вам перезвоним
-                    </p>
-                    <form>
-                        <label class="modal-label" for="user-name"
-                            >Имя
+
+                    <form class="form">
+                        <p class="modal-title">
+                            Оставьте свои данные, мы вам перезвоним
+                        </p>
+                        <div class="form-field">
+                            <label class="form-label" for="user-name"
+                                >Имя</label
+                            >
                             <input
                                 type="text"
-                                class="modal-input"
+                                class="form-input"
                                 name="user-name"
+                                id="user-name"
                                 placeholder=" "
                                 required
+                                autofocus
                             />
-                        </label>
-                        <label class="modal-label" for="user-email"
-                            >Телефон
-                            <input
-                                type="email"
-                                class="modal-input"
-                                name="user-email"
-                                placeholder=" "
-                                required
-                            />
-                        </label>
-                        <label class="modal-label" for="user-tel"
-                            >Почта
-                            <input
-                                type="tel"
-                                class="modal-input"
-                                name="user-tel"
-                                placeholder=" "
-                                required
-                            />
-                        </label>
-                        <label class="modal-label" for="user-text"
-                            >Комментарий<textarea
-                                name="user-text"
-                                id="user-text"
-                                class="modal-text"
-                                placeholder="Введите текст"
-                            ></textarea>
-                        </label>
-                        <div class="conditions-block">
-                            <label>
-                                <input type="checkbox" name="conditions" value="
-                                <p class="conditions-text">
-                                    Соглашаюсь с рассылкой и принимаю
-                                    <a class="conditions-link" href=""
-                                        >Условия договора
-                                    </a>
-                                </p>
-                            </label>
                         </div>
 
-                        <button type="submit" class="modal-btn">
+                        <div class="form-field">
+                            <label class="form-label" for="user-tel"
+                                >Телефон</label
+                            >
+                            <input
+                                type="tel"
+                                class="form-input"
+                                name="user-tel"
+                                id="user-tel"
+                                placeholder=" "
+                                required
+                            />
+                        </div>
+
+                        <div class="form-field">
+                            <label class="form-label" for="user-email"
+                                >Почта</label
+                            >
+                            <input
+                                type="email"
+                                class="form-input"
+                                name="user-email"
+                                id="user-email"
+                                placeholder=" "
+                                required
+                            />
+                        </div>
+
+                        <div class="form-field">
+                            <label class="form-label" for="user-text"
+                                >Комментарий</label
+                            ><textarea
+                                name="user-text"
+                                id="user-text"
+                                class="form-text"
+                                rows="10"
+                                placeholder="Введите текст"
+                            ></textarea>
+                        </div>
+
+                        <div class="conditions-block">
+                            <input
+                                type="checkbox"
+                                name="conditions"
+                                id="conditions"
+                            />
+                            <label for="conditions"
+                                >Соглашаюсь с рассылкой и принимаю Условия
+                                договора</label
+                            >
+                        </div>
+
+                        <button type="submit" class="form-btn">
                             Отправить
                         </button>
                     </form>
