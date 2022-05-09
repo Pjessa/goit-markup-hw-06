@@ -673,7 +673,7 @@
                     </form>
                 </div>
             </footer>
-            <div class="backdrop" data-modal>
+            <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button
                         data-modal-close
@@ -693,13 +693,6 @@
                             <label class="form-label" for="user-name"
                                 >Имя</label
                             >
-                            <a href="" class="form-link">
-                                <svg class="form-icon" width="12" height="12">
-                                    <use
-                                        href="./images/icons.svg#icon-Vector-name"
-                                    ></use>
-                                </svg>
-                            </a>
                             <input
                                 type="text"
                                 class="form-input"
@@ -709,19 +702,19 @@
                                 required
                                 autofocus
                             />
+                            <a href="" class="form-link">
+                                <svg class="form-icon" width="12" height="12">
+                                    <use
+                                        href="./images/icons.svg#icon-Vector-name"
+                                    ></use>
+                                </svg>
+                            </a>
                         </div>
 
                         <div class="form-field">
                             <label class="form-label" for="user-tel"
                                 >Телефон</label
                             >
-                            <a href="" class="form-link">
-                                <svg class="form-icon" width="13" height="13">
-                                    <use
-                                        href="./images/icons.svg#icon-Vector-tel"
-                                    ></use>
-                                </svg>
-                            </a>
                             <input
                                 type="tel"
                                 class="form-input"
@@ -730,19 +723,19 @@
                                 placeholder=" "
                                 required
                             />
+                            <a href="" class="form-link">
+                                <svg class="form-icon" width="13" height="13">
+                                    <use
+                                        href="./images/icons.svg#icon-Vector-tel"
+                                    ></use>
+                                </svg>
+                            </a>
                         </div>
 
                         <div class="form-field">
                             <label class="form-label" for="user-email"
                                 >Почта</label
                             >
-                            <a href="" class="form-link">
-                                <svg class="form-icon" width="15" height="12">
-                                    <use
-                                        href="./images/icons.svg#icon-Vector-email"
-                                    ></use>
-                                </svg>
-                            </a>
                             <input
                                 type="email"
                                 class="form-input"
@@ -751,6 +744,13 @@
                                 placeholder=" "
                                 required
                             />
+                            <a href="" class="form-link">
+                                <svg class="form-icon" width="15" height="12">
+                                    <use
+                                        href="./images/icons.svg#icon-Vector-email"
+                                    ></use>
+                                </svg>
+                            </a>
                         </div>
 
                         <div class="form-field">
@@ -766,14 +766,17 @@
                         </div>
 
                         <div class="conditions-block">
-                            <input
-                                type="checkbox"
-                                name="conditions"
-                                id="conditions"
-                            />
-                            <label for="conditions"
-                                >Соглашаюсь с рассылкой и принимаю Условия
-                                договора</label
+                            <label class="conditions-label">
+                                <input
+                                    class="checkbox"
+                                    type="checkbox"
+                                    name="conditions"
+                                />
+                                <span class="conditions-icon"></span>
+                                Соглашаюсь с рассылкой и принимаю
+                            </label>
+                            <a class="conditions-link" href="">
+                                Условия договора</a
                             >
                         </div>
 
