@@ -721,12 +721,15 @@ img {
     position: relative;
 }
 .form-field input {
+    outline: none;
     margin: 0;
     padding: 12px 12px 12px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-
+.form-field textarea {
+    outline: none;
+}
 .form-field label {
     margin-bottom: 4px;
 }
